@@ -3,13 +3,13 @@ import java.util.*;
 public class LineComp {
 
 	
-		static double findLineLength() {
+	 static double findLineLength() {
 	        Scanner scanner = new Scanner(System.in);
 	        System.out.println("Enter co-ordinates for two points:");
-	        
+
 	        System.out.print("Enter x1 co-ordinate value: ");
 	        int x1 = scanner.nextInt();
-	        
+
 	        System.out.print("Enter y1 co-ordinate value: ");
 	        int y1 = scanner.nextInt();
 
@@ -31,16 +31,19 @@ public class LineComp {
 	    public static void main(String[] args) {
 
 	        System.out.println("Welcome to Line Comparison Computation Program!");
-	        Double line1 = findLineLength();
-	        Double line2 = findLineLength();
+	        double line1Length = findLineLength();
+	        double line2Length = findLineLength();
 
-	        if (line1.equals(line2)) {
+	        if (line1Length == line2Length) {
 	            System.out.println("Two lines are equal!");
+	        } else if (line1Length > line2Length) {
+	            System.out.println("Line 1 is greater than Line 2");
 	        } else {
-	            System.out.println("Two lines are not equal!");
+	            System.out.println("Line 2 is greater than Line 1");
 	        }
-	        System.out.println("Length of a Line 1: " + line1);
-	        System.out.println("Length of a Line 2: " + line2);
+	        
+	        System.out.println("Length of a Line 1: " + line1Length);
+	        System.out.println("Length of a Line 2: " + line2Length);
 	    }		
 	
 
