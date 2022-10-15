@@ -2,13 +2,14 @@ package com.bridgelabz;
 import java.util.*;
 public class LineComp {
 
-	public static void main(String[] args) {
-		 System.out.println("Welcome to Line Comparison Computation Program!");
-
+	
+		static double findLineLength() {
 	        Scanner scanner = new Scanner(System.in);
+	        System.out.println("Enter co-ordinates for two points:");
+	        
 	        System.out.print("Enter x1 co-ordinate value: ");
 	        int x1 = scanner.nextInt();
-
+	        
 	        System.out.print("Enter y1 co-ordinate value: ");
 	        int y1 = scanner.nextInt();
 
@@ -23,6 +24,23 @@ public class LineComp {
 
 	        double lineLength = Math.sqrt(Math.pow(xValueDiff, 2) + Math.pow(yValueDiff, 2));
 	        System.out.println("Length of a Line: " + lineLength);
+	        return Math.sqrt(Math.pow(xValueDiff, 2) + Math.pow(yValueDiff, 2));
+
+	    }
+
+	    public static void main(String[] args) {
+
+	        System.out.println("Welcome to Line Comparison Computation Program!");
+	        Double line1 = findLineLength();
+	        Double line2 = findLineLength();
+
+	        if (line1.equals(line2)) {
+	            System.out.println("Two lines are equal!");
+	        } else {
+	            System.out.println("Two lines are not equal!");
+	        }
+	        System.out.println("Length of a Line 1: " + line1);
+	        System.out.println("Length of a Line 2: " + line2);
 	    }		
 	
 
