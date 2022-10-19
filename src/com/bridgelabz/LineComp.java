@@ -2,7 +2,10 @@ package com.bridgelabz;
 import java.util.*;
 public class LineComp {
 
-	
+	/*Use Java Object Oriented
+	Programming Concepts of Line
+	and Point as well as equals and
+	compareTo methods.*/
 	 static double findLineLength() {
 	        Scanner scanner = new Scanner(System.in);
 	        System.out.println("Enter co-ordinates for two points:");
